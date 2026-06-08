@@ -22,8 +22,40 @@ jobs:
           java-version: '21'
           cache: maven
 
-      - name: Run Tests
-        run: mvn test
+      - name: Run tests
+        env:
+          DB_URL: jdbc:postgresql://localhost:5432/careeros_test
+          DB_USERNAME: careeros
+          DB_PASSWORD: careeros
+          REDIS_HOST: localhost
+          JWT_SECRET: test-secret-key-for-ci-minimum-256-bits-long
+        run: mvn test --no-transfer-progress
 
       - name: Build JAR
-        run: mvn package -DskipTests
+        run: mvn package -DskipTests --no-transfer-progress
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: careeros-api-jar
+          path: target/*.jar
+          retention-days: 7
+
+  code-quality:
+    name: Code Quality Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Check code style
+        run: mvn checkstyle:check --no-transfer-progress
+        continue-on-error: true
