@@ -1,5 +1,6 @@
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\controller\ResumeController.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\dto\response\AuthResponse.java
+C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\service\ResumeService.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\dto\request\RegisterRequest.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\exception\GlobalExceptionHandler.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\controller\AuthController.java
@@ -7,8 +8,11 @@ C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\care
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\entity\Resume.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\repository\JobApplicationRepository.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\repository\UserRepository.java
+C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\dto\response\ResumeResponse.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\dto\response\UserResponse.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\entity\User.java
+C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\dto\response\ResumeUploadResponse.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\entity\JobApplication.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\repository\ResumeRepository.java
+C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\service\ResumeServiceImpl.java
 C:\Users\RedJohn\Downloads\Daily Open-Source\careeros-api\src\main\java\com\careeros\CareerosApiApplication.java
